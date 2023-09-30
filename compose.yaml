@@ -7,5 +7,7 @@ services:
     environment:
       PORT: 8000
     ports:
-      - '8000:8000'
+      - '9000:8000'
+      - '10000:8000'
+      - '11000:8000'
     restart: "no"
