@@ -1,33 +1,11 @@
 services:
-  dev_api:
+  api:
     build:
       context: .
       target: builder
-    container_name: fastapi-dev-application
+    container_name: fastapi-application
     environment:
       PORT: 9000
     ports:
       - '9000:9000'
-    restart: "no"
-
-  test_api:
-    build:
-      context: .
-      target: builder
-    container_name: fastapi-test-application
-    environment:
-      PORT: 10000
-    ports:
-      - '10000:10000'
-    restart: "no"
-
-  prod_api:
-    build:
-      context: .
-      target: builder
-    container_name: fastapi-prod-application
-    environment:
-      PORT: 11000
-    ports:
-      - '11000:11000'
     restart: "no"
