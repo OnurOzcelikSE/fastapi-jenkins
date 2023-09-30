@@ -5,9 +5,9 @@ services:
       target: builder
     container_name: fastapi-dev-application
     environment:
-      PORT: 8000
+      PORT: 9000
     ports:
-      - '8000:8000'
+      - '9000:9000'
     restart: "no"
 
   test_api:
@@ -16,9 +16,9 @@ services:
       target: builder
     container_name: fastapi-test-application
     environment:
-      PORT: 9000
+      PORT: 10000
     ports:
-      - '9000:9000'
+      - '10000:10000'
     restart: "no"
 
   prod_api:
@@ -27,7 +27,7 @@ services:
       target: builder
     container_name: fastapi-prod-application
     environment:
-      PORT: 10000
+      PORT: 11000
     ports:
-      - '10000:10000'
+      - '11000:11000'
     restart: "no"
