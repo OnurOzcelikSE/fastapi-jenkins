@@ -5,7 +5,7 @@ services:
       target: builder
     container_name: fastapi-application
     environment:
-      PORT: 11000
+      PORT: 10000
     ports:
       - '10000:10000'
     restart: "no"
